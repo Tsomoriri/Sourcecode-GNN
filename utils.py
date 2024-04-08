@@ -121,4 +121,4 @@ def feature_engineering(train_func):
     # Create a `GraphsTuple` object
     graphs_tuple = utils_tf.data_dicts_to_graphs_tuple([data_dict])
 
-    return graphs_tuple , G
+    return graphs_tuple

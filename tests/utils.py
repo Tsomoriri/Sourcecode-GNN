@@ -1,7 +1,5 @@
 import pytest
-import pandas as pd
-import networkx as nx
-from src.utils import data_processing, load_json_data, extract_func_data, feature_engineering
+from utils import load_json_data
 import json
 
 # Test data

@@ -1,0 +1,14 @@
+streamlit
+jax
+jaxlib
+dm-haiku
+gensim
+jraph
+networkx
+matplotlib
+scipy==1.10.1
+scikit-learn
+graph_nets
+optax
+typing
+tensorflow

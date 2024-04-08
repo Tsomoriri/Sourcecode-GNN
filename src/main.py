@@ -4,11 +4,11 @@ import jax.numpy as jnp
 import haiku as hk
 from gensim.models import Word2Vec
 import jraph
+import pickle
 
 # Specify the file paths
 train_file_path = '/home/sushen/projects/Sourcecode-GNN/data/train_data.json'
-val_file_path = '/home/sushen/projects/Sourcecode-GNN/data/val_data.json'
-test_file_path = '/home/sushen/projects/Sourcecode-GNN/data/test_data.json'
+
 
 # Process data
 train_df, train_func = data_processing(train_file_path)
@@ -36,8 +36,15 @@ Jgraph = jraph.GraphsTuple(
 network = hk.without_apply_rng(hk.transform(gcn_definition))
 
 # Train the GCN model
-trained_params = optimize_model(network, Jgraph, num_steps=15)
+trained_params = optimize_model(network, Jgraph, num_steps=1)
 
+# Save the trained model parameters
+with open('trained_model.pkl', 'wb') as f:
+    pickle.dump(trained_params, f)
+
+# Save the trained Word2Vec model
+func_vec = Word2Vec(train_func, min_count=5)
+func_vec.save('func_vec.model')
 # Function to predict vulnerability of a new function
 def predict_vulnerability(func, trained_params,train_func):
     # Convert the function to a node feature vector
