@@ -49,7 +49,7 @@ The project follows the following flow of logic:
 
 
 ## Demo
-![Screenshot](models/img.png)
+![Screenshot](/main/models/img.png)
 ## Prerequisites
 ```
     Docker
