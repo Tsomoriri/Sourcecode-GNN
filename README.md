@@ -47,6 +47,9 @@ The project follows the following flow of logic:
 -    Vulnerability Score: The GCN model outputs a vulnerability score for each node (word) in the graph.
 -    Vulnerability Prediction: The vulnerability scores are aggregated, and a threshold is applied to determine whether the function is vulnerable or not.
 
+
+## Demo
+![Screenshot](model/img.jpg)
 ## Prerequisites
 ```
     Docker
