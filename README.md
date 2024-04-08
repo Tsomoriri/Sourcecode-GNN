@@ -49,7 +49,14 @@ The project follows the following flow of logic:
 
 
 ## Demo
-![Screenshot](https://github.com/Tsomoriri/Sourcecode-GNN/tree/main/models/img.png)
+<h1 align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="models/new.png"/>
+ </a>
+ <br />
+</h1>
+<br />
+
 ## Prerequisites
 ```
     Docker
