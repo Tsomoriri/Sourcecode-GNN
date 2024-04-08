@@ -1,23 +1,27 @@
 # Function Vulnerability Prediction
 
-This project aims to predict the vulnerability of a given function definition using a Graph Convolutional Network (GCN) implemented in Jax and Jraph. The project includes a Streamlit application for the user interface and a Docker container for easy deployment.
+This project aims to predict the vulnerability of a given function definition using a Graph Convolutional Network (GCN) implemented in Jax and Jraph. 
+We assume that a vulnerable function shares similarities in terms of word embeddings with the training dataset of vulnerable functions.
+The GCN will find patterns that the new function definition shares with the training dataset. It encapsulates this knowledge through a relationship via embedding with  the training graph. 
+The reason for using Jax is to utilise @jit and GPU accelerated features native to Jax. 
+It includes a Streamlit application for the user interface and a Docker container for easy deployment.
 
 ## Project Overview
 
 The project follows the following flow of logic:
 ```
 +---------------------+
-|   Function Definition   |
+| Function Definition |
 +---------------------+
             |
             v
 +---------------------+
-|   Word Embedding     |
+|   Word Embedding    |
 +---------------------+
             |
             v
 +---------------------+
-|   Graph Construction |
+|  Graph Construction |
 +---------------------+
             |
             v
@@ -27,12 +31,13 @@ The project follows the following flow of logic:
             |
             v
 +---------------------+
-|   Vulnerability Score   |
+| Vulnerability Score |
 +---------------------+
             |
             v
 +---------------------+
-|   Vulnerability Prediction |
+| Vulnerability
+            Prediction|
 +---------------------+
 ```
 -    Function Definition: The user provides a function definition as input.
@@ -89,4 +94,6 @@ streamlit run app.py
 -    data/train_data.json: Contains the training data for the GCN model.
 -   Dockerfile: Defines the Docker image configuration for easy deployment.
     requirements.txt: Lists the required Python packages for the project.
-
+## References
+- https://doi.org/10.1145/3607199.3607242
+- JAX and jraph
