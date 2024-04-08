@@ -1,10 +1,10 @@
 # Function Vulnerability Prediction
 
-This project aims to predict the vulnerability of a given function definition using a Graph Convolutional Network (GCN) implemented in Jax and Jraph. 
-We assume that a vulnerable function shares similarities in terms of word embeddings with the training dataset of vulnerable functions.
-The GCN will find patterns that the new function definition shares with the training dataset. It encapsulates this knowledge through a relationship via embedding with  the training graph. 
-The reason for using Jax is to utilise @jit and GPU accelerated features native to Jax. 
-It includes a Streamlit application for the user interface and a Docker container for easy deployment.
+- This project aims to predict the vulnerability of a given function definition using a Graph Convolutional Network (GCN) implemented in Jax and Jraph. 
+- We assume that a vulnerable function shares similarities in terms of word embeddings with the training dataset of vulnerable functions.
+- The GCN will find patterns that the new function definition shares with the training dataset. It encapsulates this knowledge through a relationship via embedding with  the training graph. 
+- The reason for using Jax is to utilise @jit and GPU accelerated features native to Jax. 
+- It includes a Streamlit application for the user interface and a Docker container for easy deployment.
 
 ## Project Overview
 
