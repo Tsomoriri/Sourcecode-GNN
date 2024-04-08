@@ -5,7 +5,7 @@
 - The GCN will find patterns that the new function definition shares with the training dataset. It encapsulates this knowledge through a relationship via embedding with  the training graph. 
 - The reason for using Jax is to utilise @jit and GPU accelerated features native to Jax. 
 - It includes a Streamlit application for the user interface and a Docker container for easy deployment.
-
+![Training Graph](models/output.png)
 ## Project Overview
 
 The project follows the following flow of logic:
