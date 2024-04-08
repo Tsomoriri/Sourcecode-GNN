@@ -49,7 +49,7 @@ The project follows the following flow of logic:
 
 
 ## Demo
-![Screenshot](/main/models/img.png)
+![Screenshot](https://github.com/Tsomoriri/Sourcecode-GNN/tree/main/models/img)
 ## Prerequisites
 ```
     Docker
