@@ -49,13 +49,7 @@ The project follows the following flow of logic:
 
 
 ## Demo
-<h1 align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="models/img.png"/>
- </a>
- <br />
-</h1>
-<br />
+![Demo](models/img.png)
 
 ## Prerequisites
 ```
